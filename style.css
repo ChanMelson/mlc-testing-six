@@ -1,4 +1,3 @@
-/* CSS Variables for Light / Dark Mode */
 :root {
     --bg-color: #f8fafc;
     --text-color: #0f172a;
@@ -9,7 +8,7 @@
     --muted-text: #64748b;
     --nav-bg: rgba(248, 250, 252, 0.85);
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --logo-color: #9333ea; /* Purple color matching your screenshot */
+    --logo-color: #9333ea;
     --logo-hover: #a855f7;
 }
 
@@ -23,7 +22,7 @@
     --muted-text: #94a3b8;
     --nav-bg: rgba(15, 23, 42, 0.85);
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-    --logo-color: #a855f7; /* Vibrant purple for dark mode */
+    --logo-color: #a855f7;
     --logo-hover: #c084fc;
 }
 
@@ -41,7 +40,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation Bar */
 header {
     position: fixed;
     top: 0;
@@ -62,21 +60,18 @@ header {
     padding: 1rem 2rem;
 }
 
-/* Purple Underlined Logo Style */
 .profile-logo {
     font-weight: 700;
     font-size: 1.35rem;
     color: var(--logo-color);
     text-decoration: underline;
-    text-underline-offset: 4px; /* Adjusts gap between text and underline */
-    text-decoration-thickness: 2px; /* Thickness of the underline */
-    transition: color 0.2s ease, text-decoration-color 0.2s ease, transform 0.2s ease;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
 }
 
 .profile-logo:hover {
     color: var(--logo-hover);
     text-decoration-color: var(--logo-hover);
-    transform: translateY(-1px);
 }
 
 .nav-links {
@@ -109,7 +104,6 @@ header {
     justify-content: center;
 }
 
-/* Main Blog Layout */
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -132,7 +126,6 @@ main {
     font-size: 1.1rem;
 }
 
-/* Blog Grid */
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -148,8 +141,6 @@ main {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    transform: translateY(0);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .blog-card:hover {
@@ -206,11 +197,6 @@ main {
     gap: 0.4rem;
 }
 
-.read-more:hover {
-    color: var(--primary-hover);
-}
-
-/* Footer */
 footer {
     text-align: center;
     padding: 3rem 2rem;
@@ -218,14 +204,4 @@ footer {
     font-size: 0.9rem;
     border-top: 1px solid var(--card-border);
     margin-top: 4rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    .blog-header h1 {
-        font-size: 2rem;
-    }
 }
